@@ -10,9 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-    private int mCounter = 0;
-    ImageView btn;
-    TextView txv;
+
     MediaPlayer mediaPlayer;
     Button play;
 
@@ -35,15 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        btn = (ImageView) findViewById(R.id.button1);
-        txv = (TextView)findViewById(R.id.tx);
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mCounter ++;
-                txv.setText(Integer.toString(mCounter));
-            }
-        });
     }
 }
