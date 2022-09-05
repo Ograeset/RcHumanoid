@@ -2,6 +2,7 @@ package se.nani;
 
 
 import android.media.MediaPlayer;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     MediaPlayer mediaPlayer;
     Button play;
+    ImageView rArm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +24,21 @@ public class MainActivity extends AppCompatActivity {
         mediaPlayer = MediaPlayer.create(this, R.raw.bend);
 
         play = (Button)findViewById(R.id.play);
+        rArm = (ImageView)findViewById(R.id.imageView2);
+
 
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mediaPlayer.start();
+                rArm.setVisibility(ImageView.VISIBLE);
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    public void run() {
+                        rArm.setVisibility(ImageView.INVISIBLE);
+                        // yourMethod();
+                    }
+                }, 5000);
             }
         });
 
