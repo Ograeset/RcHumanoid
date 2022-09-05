@@ -13,7 +13,10 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
 
     MediaPlayer mediaPlayer;
-    Button play;
+    Button arm;
+    Button left;
+    Button right;
+    ImageView lArm;
     ImageView rArm;
 
     @Override
@@ -23,28 +26,52 @@ public class MainActivity extends AppCompatActivity {
 
         mediaPlayer = MediaPlayer.create(this, R.raw.arm);
 
-        play = (Button)findViewById(R.id.play);
-        rArm = (ImageView)findViewById(R.id.arm_l);
+        left = (Button)findViewById(R.id.left);
+        right= (Button)findViewById(R.id.right);
+        arm = (Button)findViewById(R.id.arm);
+        lArm = (ImageView)findViewById(R.id.arm_l);
+        rArm = (ImageView)findViewById(R.id.arm_r);
 
 
-        play.setOnClickListener(new View.OnClickListener() {
+        left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mediaPlayer.start();
-                rArm.setVisibility(ImageView.VISIBLE);
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    public void run() {
-                        rArm.setVisibility(ImageView.INVISIBLE);
-                        // yourMethod();
+                arm.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mediaPlayer.start();
+                        lArm.setVisibility(ImageView.VISIBLE);
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            public void run() {
+                                lArm.setVisibility(ImageView.INVISIBLE);
+                                // yourMethod();
+                            }
+                        }, 5000);
                     }
-                }, 5000);
+                });
             }
         });
 
-
-
-
+        right.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                arm.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mediaPlayer.start();
+                        rArm.setVisibility(ImageView.VISIBLE);
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            public void run() {
+                                rArm.setVisibility(ImageView.INVISIBLE);
+                                // yourMethod();
+                            }
+                        }, 5000);
+                    }
+                });
+            }
+        });
 
     }
 }
