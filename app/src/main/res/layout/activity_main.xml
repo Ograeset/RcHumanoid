@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/background"
         android:visibility="visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,18 +20,18 @@
         app:srcCompat="@drawable/background" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/arm_l"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
         android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/arm_l" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/hand_l"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
         app:srcCompat="@drawable/hand_l" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/wrist_l"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
         app:srcCompat="@drawable/wrist_l" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/head"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
         app:srcCompat="@drawable/head" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/arm_r"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
         app:srcCompat="@drawable/arm_r" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/elbow_r"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
         app:srcCompat="@drawable/elbow_r" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/hand_r"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
         app:srcCompat="@drawable/hand_r" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/wrist_r"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -117,7 +117,7 @@
         app:srcCompat="@drawable/wrist_r" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/knee_l"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -129,7 +129,7 @@
         app:srcCompat="@drawable/knee_l" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/leg_l"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
         app:srcCompat="@drawable/leg_l" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/leg_r"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -153,7 +153,7 @@
         app:srcCompat="@drawable/leg_r" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/foot_l"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -165,7 +165,7 @@
         app:srcCompat="@drawable/foot_l" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/foot_r"
         android:visibility="invisible"
     android:layout_width="wrap_content"
         android:layout_height="wrap_content"

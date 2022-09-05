@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.bend);
+        mediaPlayer = MediaPlayer.create(this, R.raw.arm);
 
         play = (Button)findViewById(R.id.play);
-        rArm = (ImageView)findViewById(R.id.imageView2);
+        rArm = (ImageView)findViewById(R.id.arm_l);
 
 
         play.setOnClickListener(new View.OnClickListener() {
