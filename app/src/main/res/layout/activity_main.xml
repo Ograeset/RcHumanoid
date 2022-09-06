@@ -2,22 +2,24 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="1920px"
-    android:layout_height="1080px"
-    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/background"
-        android:visibility="visible"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:contentDescription="@string/app_name"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bakgrund" />
 
     <ImageView
         android:id="@+id/arm_l"
@@ -32,12 +34,12 @@
 
     <ImageView
         android:id="@+id/hand_l"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
         android:layout_marginEnd="102dp"
         android:contentDescription="@string/app_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,10 +48,10 @@
 
     <ImageView
         android:id="@+id/wrist_l"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,10 +60,10 @@
 
     <ImageView
         android:id="@+id/head"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,10 +72,10 @@
 
     <ImageView
         android:id="@+id/arm_r"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,10 +84,10 @@
 
     <ImageView
         android:id="@+id/elbow_r"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,10 +96,10 @@
 
     <ImageView
         android:id="@+id/hand_r"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,10 +108,10 @@
 
     <ImageView
         android:id="@+id/wrist_r"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,10 +120,10 @@
 
     <ImageView
         android:id="@+id/knee_l"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -130,10 +132,10 @@
 
     <ImageView
         android:id="@+id/leg_l"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,10 +144,10 @@
 
     <ImageView
         android:id="@+id/leg_r"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -154,10 +156,10 @@
 
     <ImageView
         android:id="@+id/foot_l"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -178,35 +180,141 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/foot_r" />
 
-    <Button
-        android:id="@+id/arm"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:background="#00FFFFFF"
-        android:text=""
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="32dp"
+        android:touchscreenBlocksFocus="false"
+        app:columnCount="3"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="1.0"
+        app:rowCount="4"
+        app:useDefaultMargins="false">
 
-    <Button
-        android:id="@+id/left"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LEFT"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RIGHT"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.67"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/arm"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text=""
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFF"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text=""
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFF"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text=""
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFF"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/right7"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text=""
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFF"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/right70"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text=""
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFF"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/right9"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text=""
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFF"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/right8"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text=""
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFF"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/right90"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text=""
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFF"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/right80"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text=""
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFF"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/right88"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text=""
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFF"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/right89"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text=""
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFF"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/right86"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text=""
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFF"
+            app:strokeWidth="3dp" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
