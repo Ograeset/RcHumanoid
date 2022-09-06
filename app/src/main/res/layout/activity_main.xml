@@ -7,6 +7,7 @@
     android:background="@color/purple_200"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/background"
         android:layout_width="0dp"
@@ -182,229 +183,13 @@
     app:layout_constraintVertical_bias="0.0"
     app:srcCompat="@drawable/foot_r" />
 
-<!--
-    <androidx.gridlayout.widget.GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginStart="10dp"
-        android:padding="32dp"
-        android:touchscreenBlocksFocus="false"
-        app:columnCount="3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:rowCount="8"
-        app:useDefaultMargins="false">
 
 
-        <Button
-            android:id="@+id/arm"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text=""
-            app:cornerRadius="10dp"
-            app:strokeColor="#FFF"
-            app:strokeWidth="3dp" />
+    <!-- guidelines -->
+    <!-- Guides left side -->
 
-        <Button
-            android:id="@+id/left"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text=""
-            app:cornerRadius="10dp"
-            app:strokeColor="#FFF"
-            app:strokeWidth="3dp" />
-
-        <Button
-            android:id="@+id/right"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text=""
-            app:cornerRadius="10dp"
-            app:strokeColor="#FFF"
-            app:strokeWidth="3dp" />
-
-        <Button
-            android:id="@+id/right7"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text=""
-            app:cornerRadius="10dp"
-            app:strokeColor="#FFF"
-            app:strokeWidth="3dp" />
-
-        <Button
-            android:id="@+id/right70"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text=""
-            app:cornerRadius="10dp"
-            app:strokeColor="#FFF"
-            app:strokeWidth="3dp" />
-
-        <Button
-            android:id="@+id/right9"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text=""
-            app:cornerRadius="10dp"
-            app:strokeColor="#FFF"
-            app:strokeWidth="3dp" />
-
-        <Button
-            android:id="@+id/right8"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text=""
-            app:cornerRadius="10dp"
-            app:strokeColor="#FFF"
-            app:strokeWidth="3dp" />
-
-        <Button
-            android:id="@+id/right90"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text=""
-            app:cornerRadius="10dp"
-            app:strokeColor="#FFF"
-            app:strokeWidth="3dp" />
-
-        <Button
-            android:id="@+id/right80"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text=""
-            app:cornerRadius="10dp"
-            app:strokeColor="#FFF"
-            app:strokeWidth="3dp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/BtnText"
-            android:textColor="@color/white"
-            tools:layout_editor_absoluteX="470dp"
-            tools:layout_editor_absoluteY="96dp" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/BtnText"
-            android:textColor="@color/white"
-            tools:layout_editor_absoluteX="470dp"
-            tools:layout_editor_absoluteY="96dp" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/BtnText"
-            android:textColor="@color/white"
-            tools:layout_editor_absoluteX="470dp"
-            tools:layout_editor_absoluteY="96dp" />
-
-        <Button
-            android:id="@+id/right88"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:autoSizeTextType="uniform"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text=""
-            app:cornerRadius="10dp"
-            app:strokeColor="#FFF"
-            app:strokeWidth="3dp" />
-
-        <Button
-            android:id="@+id/right89"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text=""
-            app:cornerRadius="10dp"
-            app:strokeColor="#FFF"
-            app:strokeWidth="3dp" />
-
-        <Button
-            android:id="@+id/right86"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text=""
-            app:cornerRadius="10dp"
-            app:strokeColor="#FFF"
-            app:strokeWidth="3dp" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/BtnText"
-            android:textColor="@color/white"
-            tools:layout_editor_absoluteX="470dp"
-            tools:layout_editor_absoluteY="96dp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/BtnText"
-            android:textColor="@color/white"
-            tools:layout_editor_absoluteX="470dp"
-            tools:layout_editor_absoluteY="96dp" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/BtnText"
-            android:textColor="@color/white"
-            tools:layout_editor_absoluteX="470dp"
-            tools:layout_editor_absoluteY="96dp" />
-
-    </androidx.gridlayout.widget.GridLayout>
-    -->
-
-
-<!-- guidelines -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
+        android:id="@+id/guidelineStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -412,56 +197,66 @@
         app:layout_constraintGuide_percent="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
+        android:id="@+id/guidelineCol1_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.4" />
+        app:layout_constraintGuide_percent="0.08" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
+        android:id="@+id/guidelineCol1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.13" />
+
+
+    <!-- Guides right side -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCol4_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.63" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline7"
+        android:id="@+id/guidelineCol4_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.68" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineMiddleRight1"
+        android:id="@+id/guidelineCol5_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.75" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineMiddleRight2"
+        android:id="@+id/guidelineCol5_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.8" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineRightRight1"
+        android:id="@+id/guidelineCol6_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.87" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineRightRight2"
+        android:id="@+id/guidelineCol6_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.92" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline8"
+        android:id="@+id/guidelineEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -478,9 +273,9 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/test2"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCol4_2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintStart_toStartOf="@id/guidelineCol4_1"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
@@ -495,9 +290,9 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/test3"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCol4_2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintStart_toStartOf="@id/guidelineCol4_1"
         app:layout_constraintTop_toBottomOf="@+id/test1"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
@@ -512,9 +307,9 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/test4"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCol4_2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintStart_toStartOf="@id/guidelineCol4_1"
         app:layout_constraintTop_toBottomOf="@+id/test2"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
@@ -529,9 +324,9 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCol4_2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintStart_toStartOf="@id/guidelineCol4_1"
         app:layout_constraintTop_toBottomOf="@+id/test3"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
@@ -549,9 +344,9 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/test6"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineMiddleRight2"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCol5_2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineMiddleRight1"
+        app:layout_constraintStart_toStartOf="@id/guidelineCol5_1"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
@@ -566,9 +361,9 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/test7"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineMiddleRight2"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCol5_2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineMiddleRight1"
+        app:layout_constraintStart_toStartOf="@id/guidelineCol5_1"
         app:layout_constraintTop_toBottomOf="@+id/test5"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
@@ -583,9 +378,9 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/test8"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineMiddleRight2"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCol5_2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineMiddleRight1"
+        app:layout_constraintStart_toStartOf="@id/guidelineCol5_1"
         app:layout_constraintTop_toBottomOf="@+id/test6"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
@@ -600,9 +395,9 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineMiddleRight2"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCol5_2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineMiddleRight1"
+        app:layout_constraintStart_toStartOf="@id/guidelineCol5_1"
         app:layout_constraintTop_toBottomOf="@+id/test7"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
@@ -619,9 +414,9 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/test10"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineRightRight2"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCol6_2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineRightRight1"
+        app:layout_constraintStart_toStartOf="@id/guidelineCol6_1"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
@@ -636,9 +431,9 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/test11"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineRightRight2"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCol6_2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineRightRight1"
+        app:layout_constraintStart_toStartOf="@id/guidelineCol6_1"
         app:layout_constraintTop_toBottomOf="@+id/test9"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
@@ -653,9 +448,9 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/test12"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineRightRight2"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCol6_2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineRightRight1"
+        app:layout_constraintStart_toStartOf="@id/guidelineCol6_1"
         app:layout_constraintTop_toBottomOf="@+id/test10"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
@@ -670,9 +465,9 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineRightRight2"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCol6_2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineRightRight1"
+        app:layout_constraintStart_toStartOf="@id/guidelineCol6_1"
         app:layout_constraintTop_toBottomOf="@+id/test11"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
@@ -684,8 +479,8 @@
         android:layout_marginTop="13dp"
         android:text="LEFT"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol4_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol4_1"
         app:layout_constraintTop_toBottomOf="@+id/test1" />
 
     <TextView
@@ -695,8 +490,8 @@
         android:layout_marginTop="13dp"
         android:text="RIGHT"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineMiddleRight2"
-        app:layout_constraintStart_toStartOf="@+id/guidelineMiddleRight1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol5_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol5_1"
         app:layout_constraintTop_toBottomOf="@+id/test5" />
     <TextView
         android:id="@+id/textView5"
@@ -705,8 +500,8 @@
         android:layout_marginTop="13dp"
         android:text="ARM"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRightRight2"
-        app:layout_constraintStart_toStartOf="@+id/guidelineRightRight1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol6_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol6_1"
         app:layout_constraintTop_toBottomOf="@+id/test9" />
 
 
