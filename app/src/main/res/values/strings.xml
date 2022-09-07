@@ -1,8 +1,34 @@
 <resources>
     <string name="app_name">RcHumanoid</string>
-    <string name="play">play</string>
+    <!-- col1 -->
+    <string name="textCol1_R1">TEXT</string>
+    <string name="textCol1_R2">TEXT</string>
+    <string name="textCol1_R3">TEXT</string>
+    <string name="textCol1_R4">TEXT</string>
+    <!-- col2 -->
+    <string name="textCol2_R1">TEXT</string>
+    <string name="textCol2_R2">TEXT</string>
+    <string name="textCol2_R3">TEXT</string>
+    <string name="textCol2_R4">TEXT</string>
+    <!-- col3 -->
+    <string name="textCol3_R1">TEXT</string>
+    <string name="textCol3_R2">TEXT</string>
+    <string name="textCol3_R3">TEXT</string>
+    <string name="textCol3_R4">TEXT</string>
+    <!-- col4 -->
     <string name="textCol4_R1">LEFT</string>
+    <string name="textCol4_R2">TEXT</string>
+    <string name="textCol4_R3">TEXT</string>
+    <string name="textCol4_R4">TEXT</string>
+    <!-- col5 -->
     <string name="textCol5_R1">RIGHT</string>
+    <string name="textCol5_R2">TEXT</string>
+    <string name="textCol5_R3">TEXT</string>
+    <string name="textCol5_R4">TEXT</string>
+    <!-- col6 -->
     <string name="textCol6_R1">ARM</string>
+    <string name="textCol6_R2">TEXT</string>
+    <string name="textCol6_R3">TEXT</string>
+    <string name="textCol6_R4">STOP</string>
 
 </resources>

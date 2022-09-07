@@ -363,6 +363,47 @@
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
 
+    <TextView
+        android:id="@+id/txtCol1_R1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol1_R1"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol1_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol1_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol1_R1" />
+
+    <TextView
+        android:id="@+id/txtCol1_R2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol1_R2"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol1_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol1_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol1_R2" />
+
+    <TextView
+        android:id="@+id/txtCol1_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol1_R3"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol1_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol1_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol1_R3" />
+
+    <TextView
+        android:id="@+id/txtCol1_R4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol1_R4"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol1_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol1_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol1_R4" />
+
+
     <!-- chain col 2 -->
     <Button
         android:id="@+id/btnCol2_R1"
@@ -431,6 +472,47 @@
         app:layout_constraintTop_toBottomOf="@+id/btnCol2_R3"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/txtCol2_R1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol2_R1"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol2_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol2_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol2_R1" />
+
+    <TextView
+        android:id="@+id/txtCol2_R2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol2_R2"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol2_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol2_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol2_R2" />
+
+    <TextView
+        android:id="@+id/txtCol2_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol2_R3"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol2_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol2_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol2_R3" />
+
+    <TextView
+        android:id="@+id/txtCol2_R4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol2_R4"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol2_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol2_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol2_R4" />
+
 
     <!-- chain col 3 -->
     <Button
@@ -501,6 +583,47 @@
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
 
+    <TextView
+        android:id="@+id/txtCol3_R1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol3_R1"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol3_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol3_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol3_R1" />
+
+    <TextView
+        android:id="@+id/txtCol3_R2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol3_R2"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol3_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol3_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol3_R2" />
+
+    <TextView
+        android:id="@+id/txtCol3_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol3_R3"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol3_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol3_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol3_R3" />
+
+    <TextView
+        android:id="@+id/txtCol3_R4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol3_R4"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol3_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol3_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol3_R4" />
+
+
     <!-- chain col 4 -->
     <Button
         android:id="@+id/btnCol4_R1"
@@ -569,6 +692,46 @@
         app:layout_constraintTop_toBottomOf="@+id/btnCol4_R3"
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/txtCol4_R1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol4_R1"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol4_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol4_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol4_R1" />
+
+    <TextView
+        android:id="@+id/txtCol4_R2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol4_R2"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol4_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol4_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol4_R2" />
+
+    <TextView
+        android:id="@+id/txtCol4_R3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol4_R3"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol4_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol4_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol4_R3" />
+
+    <TextView
+        android:id="@+id/txtCol4_R4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol4_R4"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol4_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol4_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol4_R4" />
 
 
     <!-- chain col 5 -->
@@ -640,6 +803,46 @@
         app:strokeColor="#FFF"
         app:strokeWidth="3dp" />
 
+    <TextView
+        android:id="@+id/txtCol5_R1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol5_R1"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol5_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol5_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol5_R1" />
+
+    <TextView
+        android:id="@+id/txtCol5_R2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol5_R2"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol5_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol5_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol5_R2" />
+
+    <TextView
+        android:id="@+id/txtCol5_R3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol5_R3"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol5_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol5_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol5_R3" />
+
+    <TextView
+        android:id="@+id/txtCol5_R4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol5_R4"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol5_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol5_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol5_R4" />
+
     <!-- chain col 6 -->
     <Button
         android:id="@+id/btnCol6_R1"
@@ -699,6 +902,7 @@
         android:insetTop="0dp"
         android:insetBottom="0dp"
         android:text=""
+        android:backgroundTint="@color/red"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
@@ -707,40 +911,48 @@
         app:layout_constraintStart_toStartOf="@id/guidelineCol6_1"
         app:layout_constraintTop_toBottomOf="@+id/btnCol6_R3"
         app:strokeColor="#FFF"
-        app:strokeWidth="3dp" />
-
-    <TextView
-        android:id="@+id/txtCol4_R1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:text="@string/textCol4_R1"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineCol4_2"
-        app:layout_constraintStart_toStartOf="@+id/guidelineCol4_1"
-        app:layout_constraintTop_toBottomOf="@+id/btnCol4_R1" />
-
-    <TextView
-        android:id="@+id/txtCol5_R1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:text="@string/textCol5_R1"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineCol5_2"
-        app:layout_constraintStart_toStartOf="@+id/guidelineCol5_1"
-        app:layout_constraintTop_toBottomOf="@+id/btnCol5_R1" />
+        app:strokeWidth="3dp"
+        />
 
     <TextView
         android:id="@+id/txtCol6_R1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
         android:text="@string/textCol6_R1"
-        android:textColor="@color/white"
+        style="@style/TextviewStyle"
         app:layout_constraintEnd_toStartOf="@+id/guidelineCol6_2"
         app:layout_constraintStart_toStartOf="@+id/guidelineCol6_1"
         app:layout_constraintTop_toBottomOf="@+id/btnCol6_R1" />
+
+    <TextView
+        android:id="@+id/txtCol6_R2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol6_R2"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol6_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol6_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol6_R2" />
+
+    <TextView
+        android:id="@+id/txtCol6_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol6_R3"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol6_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol6_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol6_R3" />
+
+    <TextView
+        android:id="@+id/txtCol6_R4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCol6_R4"
+        style="@style/TextviewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol6_2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol6_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol6_R4" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
