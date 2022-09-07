@@ -4,6 +4,8 @@ package se.nani;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -40,12 +42,15 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         mediaPlayer.start();
+                        Animation animFadeIn = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+                        lArm.startAnimation(animFadeIn);
                         lArm.setVisibility(ImageView.VISIBLE);
                         Handler handler = new Handler();
                         handler.postDelayed(new Runnable() {
                             public void run() {
+                                Animation animFadeOut = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_out);
+                                lArm.startAnimation(animFadeOut);
                                 lArm.setVisibility(ImageView.INVISIBLE);
-                                // yourMethod();
                             }
                         }, 5000);
                     }
@@ -60,12 +65,15 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         mediaPlayer.start();
+                        Animation animFadeIn = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+                        rArm.startAnimation(animFadeIn);
                         rArm.setVisibility(ImageView.VISIBLE);
-                        Handler handler = new Handler();
+                       Handler handler = new Handler();
                         handler.postDelayed(new Runnable() {
                             public void run() {
+                                Animation animFadeOut = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_out);
+                                rArm.startAnimation(animFadeOut);
                                 rArm.setVisibility(ImageView.INVISIBLE);
-                                // yourMethod();
                             }
                         }, 5000);
                     }
