@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
         mediaPlayer = MediaPlayer.create(this, R.raw.arm);
 
-        left = (Button)findViewById(R.id.btnCol4_R1);
-        right= (Button)findViewById(R.id.btnCol5_R1);
-        arm = (Button)findViewById(R.id.btnCol6_R1);
+        left = (Button)findViewById(R.id.btnCol4_R2);
+        right= (Button)findViewById(R.id.btnCol6_R2);
+        arm = (Button)findViewById(R.id.btnCol1_R2);
         lArm = (ImageView)findViewById(R.id.arm_l);
         rArm = (ImageView)findViewById(R.id.arm_r);
 
