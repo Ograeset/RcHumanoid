@@ -51,35 +51,42 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         int id = view.getId(); // saves button id from onclick
 
-        Handler handler = new Handler(); // handler for time delay
 
-        // Fade in/out images
+        if(id == R.id.btnCol2_R1){ // head
+            image(id);
+        }
+        else if (id == R.id.btnCol1_R2){
+            image(id);
+        }
+
+
+    }
+
+
+    public void image(int id) {
+        ImageView [] imageList = {head, rArm};
+
+        if(id == R.id.btnCol2_R1)
+            showImage(imageList[0]);
+        else if(id == R.id.btnCol1_R2)
+            showImage(imageList[1]);
+
+    }
+
+    public void showImage(ImageView image) {
         Animation animFadeIn = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
         Animation animFadeOut = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_out);
+        Handler handler = new Handler(); // handler for time delay
 
-
-        if (id == R.id.btnCol1_R2){ //right arm
-            mediaPlayer.start();
-
-            rArm.startAnimation(animFadeIn);
-            rArm.setVisibility(ImageView.VISIBLE);
-
-            handler.postDelayed(new Runnable() {
-                public void run() {
-                    rArm.startAnimation(animFadeOut);
-                    rArm.setVisibility(ImageView.INVISIBLE);
-                }
-            }, 5000);
-        }
-       else if(id == R.id.btnCol2_R1){ // head
-            head.startAnimation(animFadeIn);
-            head.setVisibility(ImageView.VISIBLE);
-            handler.postDelayed(new Runnable() {
-                public void run() {
-                    head.startAnimation(animFadeOut);
-                    head.setVisibility(ImageView.INVISIBLE);
-                }
-            }, 5000);
-        }
+        image.startAnimation(animFadeIn);
+        image.setVisibility(ImageView.VISIBLE);
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                image.startAnimation(animFadeOut);
+                image.setVisibility(ImageView.INVISIBLE);
+            }
+        }, 5000);
     }
+
+
 }
