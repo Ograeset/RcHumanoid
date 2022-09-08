@@ -53,25 +53,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         if(id == R.id.btnCol2_R1){ // head
-            image(id);
+            showImage(head);
         }
-        else if (id == R.id.btnCol1_R2){
-            image(id);
+        else if (id == R.id.btnCol1_R2){ // right arm
+            showImage(rArm);
         }
-
 
     }
 
-
-    public void image(int id) {
-        ImageView [] imageList = {head, rArm};
-
-        if(id == R.id.btnCol2_R1)
-            showImage(imageList[0]);
-        else if(id == R.id.btnCol1_R2)
-            showImage(imageList[1]);
-
-    }
 
     public void showImage(ImageView image) {
         Animation animFadeIn = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
