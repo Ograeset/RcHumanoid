@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView lArm;
     ImageView rArm;
 
+    Boolean boolLeft = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,17 +60,90 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         int id = view.getId(); // saves button id from onclick
 
+        if (id == R.id.btnCol1_R1){
 
-        if(id == R.id.btnCol2_R1){ // head
+        }
+        else if (id == R.id.btnCol1_R2){
+            if (boolLeft){
+                showImage(lArm);
+            } else {
+                showImage(rArm);
+            }
+            mediaPlayer = MediaPlayer.create(this, R.raw.arm);
+        }
+        else if (id == R.id.btnCol1_R3){
+            mediaPlayer = MediaPlayer.create(this, R.raw.leg);
+        }
+        else if (id == R.id.btnCol1_R4){
+
+        }
+        else if(id == R.id.btnCol2_R1){ // head
             showImage(head);
             mediaPlayer = MediaPlayer.create(this, R.raw.head);
+        }
+        else if (id == R.id.btnCol2_R2){
+            mediaPlayer = MediaPlayer.create(this, R.raw.hand);
+        }
+        else if (id == R.id.btnCol2_R3){
+            mediaPlayer = MediaPlayer.create(this, R.raw.foot);
+        }
+        else if (id == R.id.btnCol2_R4){
 
         }
-        else if (id == R.id.btnCol1_R2){ // right arm
-            showImage(rArm);
-            mediaPlayer = MediaPlayer.create(this, R.raw.arm);
+        else if (id == R.id.btnCol3_R1){
 
         }
+        else if (id == R.id.btnCol3_R2){
+
+        }
+        else if (id == R.id.btnCol3_R3){
+
+        }
+        else if (id == R.id.btnCol3_R4){
+
+        }
+        else if (id == R.id.btnCol4_R1){
+
+        }
+        else if (id == R.id.btnCol4_R2){
+            mediaPlayer = MediaPlayer.create(this, R.raw.left);
+            boolLeft = true;
+        }
+        else if (id == R.id.btnCol4_R3){
+            mediaPlayer = MediaPlayer.create(this, R.raw.bend);
+        }
+        else if (id == R.id.btnCol4_R4){
+
+        }
+        else if (id == R.id.btnCol5_R1){
+            mediaPlayer = MediaPlayer.create(this, R.raw.up);
+        }
+        else if (id == R.id.btnCol5_R2){
+            mediaPlayer = MediaPlayer.create(this, R.raw.down);
+        }
+        else if (id == R.id.btnCol5_R3){
+
+        }
+        else if (id == R.id.btnCol5_R4){
+
+        }
+        else if(id == R.id.btnCol6_R1){
+
+        }
+        else if(id == R.id.btnCol6_R2){
+            mediaPlayer = MediaPlayer.create(this, R.raw.right);
+            boolLeft = false;
+        }
+        else if(id == R.id.btnCol6_R3){
+            mediaPlayer = MediaPlayer.create(this, R.raw.walk);
+        }
+        else if(id == R.id.btnCol6_R4){
+            mediaPlayer = MediaPlayer.create(this, R.raw.stop);
+        }
+
+
+
+
         mediaPlayer.start();
 
     }
