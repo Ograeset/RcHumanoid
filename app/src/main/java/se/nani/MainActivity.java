@@ -36,20 +36,73 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         // Buttons
-        btnCol4_R2 = findViewById(R.id.btnCol4_R2);
-        btnCol6_R2 = findViewById(R.id.btnCol6_R2);
+
+        btnCol1_R1 = findViewById(R.id.btnCol1_R1);
         btnCol1_R2 = findViewById(R.id.btnCol1_R2);
+        btnCol1_R3 = findViewById(R.id.btnCol1_R3);
+        btnCol1_R4 = findViewById(R.id.btnCol1_R4);
+
         btnCol2_R1 = findViewById(R.id.btnCol2_R1);
+        btnCol2_R2 = findViewById(R.id.btnCol2_R2);
+        btnCol2_R3 = findViewById(R.id.btnCol2_R3);
+        btnCol2_R4 = findViewById(R.id.btnCol2_R4);
+
+        btnCol3_R1 = findViewById(R.id.btnCol3_R1);
+        btnCol3_R2 = findViewById(R.id.btnCol3_R2);
+        btnCol3_R3 = findViewById(R.id.btnCol3_R3);
+        btnCol3_R4 = findViewById(R.id.btnCol3_R4);
+
+        btnCol4_R1 = findViewById(R.id.btnCol4_R1);
+        btnCol4_R2 = findViewById(R.id.btnCol4_R2);
+        btnCol4_R3 = findViewById(R.id.btnCol4_R3);
+        btnCol4_R4 = findViewById(R.id.btnCol4_R4);
+
+        btnCol5_R1 = findViewById(R.id.btnCol5_R1);
+        btnCol5_R2 = findViewById(R.id.btnCol5_R2);
+        btnCol5_R3 = findViewById(R.id.btnCol5_R3);
+        btnCol5_R4 = findViewById(R.id.btnCol5_R4);
+
+        btnCol6_R1 = findViewById(R.id.btnCol6_R1);
+        btnCol6_R2 = findViewById(R.id.btnCol6_R2);
+        btnCol6_R3 = findViewById(R.id.btnCol6_R3);
+        btnCol6_R4 = findViewById(R.id.btnCol6_R4);
+
+        btnCol1_R1.setOnClickListener(this);
+        btnCol1_R2.setOnClickListener(this);
+        btnCol1_R3.setOnClickListener(this);
+        btnCol1_R4.setOnClickListener(this);
+
+        btnCol2_R1.setOnClickListener(this);
+        btnCol2_R2.setOnClickListener(this);
+        btnCol2_R3.setOnClickListener(this);
+        btnCol2_R4.setOnClickListener(this);
+
+        btnCol3_R1.setOnClickListener(this);
+        btnCol3_R2.setOnClickListener(this);
+        btnCol3_R3.setOnClickListener(this);
+        btnCol3_R4.setOnClickListener(this);
+
+        btnCol4_R1.setOnClickListener(this);
+        btnCol4_R2.setOnClickListener(this);
+        btnCol4_R3.setOnClickListener(this);
+        btnCol4_R4.setOnClickListener(this);
+
+        btnCol5_R1.setOnClickListener(this);
+        btnCol5_R2.setOnClickListener(this);
+        btnCol5_R3.setOnClickListener(this);
+        btnCol5_R4.setOnClickListener(this);
+
+        btnCol6_R1.setOnClickListener(this);
+        btnCol6_R2.setOnClickListener(this);
+        btnCol6_R3.setOnClickListener(this);
+        btnCol6_R4.setOnClickListener(this);
+
 
         //Images
         lArm = findViewById(R.id.arm_l);
         rArm = findViewById(R.id.arm_r);
         head = findViewById(R.id.head);
 
-        btnCol2_R1.setOnClickListener(this);
-        btnCol1_R2.setOnClickListener(this);
-        btnCol6_R2.setOnClickListener(this);
-        btnCol4_R2.setOnClickListener(this);
 
 
     }
