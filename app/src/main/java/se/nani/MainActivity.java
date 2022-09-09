@@ -54,14 +54,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(id == R.id.btnCol2_R1){ // head
             showImage(head);
+            mediaPlayer = MediaPlayer.create(this, R.raw.head);
 
         }
         else if (id == R.id.btnCol1_R2){ // right arm
             showImage(rArm);
             mediaPlayer = MediaPlayer.create(this, R.raw.arm);
-            mediaPlayer.start();
 
         }
+        mediaPlayer.start();
 
     }
 
