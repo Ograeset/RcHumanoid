@@ -14,21 +14,20 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+
     MediaPlayer mediaPlayer;
-    Button arm;
-    Button left;
-    Button right;
-    Button btnHead;
+    Button arm, left, right, btnHead;
     ImageView head;
     ImageView lArm;
     ImageView rArm;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.arm);
+
 
         left = (Button)findViewById(R.id.btnCol4_R2);
         right= (Button)findViewById(R.id.btnCol6_R2);
@@ -43,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         arm.setOnClickListener(this);
         btnHead.setOnClickListener(this);
 
+
     }
 
 
@@ -54,13 +54,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(id == R.id.btnCol2_R1){ // head
             showImage(head);
+
         }
         else if (id == R.id.btnCol1_R2){ // right arm
             showImage(rArm);
+            mediaPlayer = MediaPlayer.create(this, R.raw.arm);
+            mediaPlayer.start();
+
         }
 
     }
 
+
+    public void playSound(){
+    }
 
     public void showImage(ImageView image) {
         Animation animFadeIn = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
