@@ -1,17 +1,17 @@
 <resources>
     <string name="app_name">RcHumanoid</string>
     <!-- col1 -->
-    <string name="textCol1_R1">BODY</string>
+    <string name="textCol1_R1">SHOULDER</string>
     <string name="textCol1_R2">ARM</string>
     <string name="textCol1_R3">LEG</string>
-    <string name="textCol1_R4">TEXT</string>
+    <string name="textCol1_R4">KNEE</string>
     <!-- col2 -->
     <string name="textCol2_R1">HEAD</string>
     <string name="textCol2_R2">HAND</string>
     <string name="textCol2_R3">FOOT</string>
     <string name="textCol2_R4">TEXT</string>
     <!-- col3 -->
-    <string name="textCol3_R1">BACK</string>
+    <string name="textCol3_R1">TORSO</string>
     <string name="textCol3_R2">FINGERS</string>
     <string name="textCol3_R3">HIP</string>
     <string name="textCol3_R4">TEXT</string>
@@ -28,7 +28,7 @@
     <!-- col6 -->
     <string name="textCol6_R1">BACKWARD</string>
     <string name="textCol6_R2">RIGHT</string>
-    <string name="textCol6_R3">WALK</string>
+    <string name="textCol6_R3">ROTATE</string>
     <string name="textCol6_R4">STOP</string>
 
 </resources>

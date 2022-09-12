@@ -1,16 +1,19 @@
 package se.nani;
 
+import android.app.Activity;
 import android.widget.ImageView;
 
-import androidx.appcompat.app.AppCompatActivity;
 
-public class Image extends AppCompatActivity {
+public class Image{
+    Activity activity;
+
+
+    private ImageView head = (ImageView)activity.findViewById(R.id.head);
     public ImageView getHead() {
-        head = (ImageView)findViewById(R.id.head);
+
         return head;
     }
 
 
-    private ImageView head;
 
 }

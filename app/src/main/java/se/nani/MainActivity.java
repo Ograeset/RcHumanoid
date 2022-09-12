@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             btnCol5_R1, btnCol5_R2, btnCol5_R3, btnCol5_R4,
             btnCol6_R1, btnCol6_R2, btnCol6_R3, btnCol6_R4;
     ImageView head, arm_l, arm_r, hand_l, hand_r, leg_l, leg_r,
-              foot_l, foot_r;
+              foot_l, foot_r, knee_l, knee_r;
 
 
     Boolean boolLeft = false;
@@ -108,6 +108,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         leg_r = findViewById(R.id.leg_r);
         foot_l = findViewById(R.id.foot_l);
         foot_r = findViewById(R.id.foot_r);
+        knee_l = findViewById(R.id.knee_l);
+        knee_r = findViewById(R.id.knee_r);
 
 
 
@@ -139,6 +141,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mediaPlayer = MediaPlayer.create(this, R.raw.leg);
         }
         else if (id == R.id.btnCol1_R4){
+            if (boolLeft){
+                showImage(knee_l);
+            } else {
+                showImage(knee_r);
+            }
+            mediaPlayer = MediaPlayer.create(this, R.raw.down);
 
         }
         else if(id == R.id.btnCol2_R1){ // head

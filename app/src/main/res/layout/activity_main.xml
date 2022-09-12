@@ -132,6 +132,18 @@
     app:layout_constraintTop_toTopOf="parent"
     app:srcCompat="@drawable/knee_l" />
 
+    <ImageView
+        android:id="@+id/knee_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/knee_r" />
+
 <ImageView
     android:id="@+id/leg_l"
     android:layout_width="wrap_content"
