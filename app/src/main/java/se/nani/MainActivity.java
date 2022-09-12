@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             btnCol4_R1, btnCol4_R2, btnCol4_R3, btnCol4_R4,
             btnCol5_R1, btnCol5_R2, btnCol5_R3, btnCol5_R4,
             btnCol6_R1, btnCol6_R2, btnCol6_R3, btnCol6_R4;
-    ImageView head;
-    ImageView lArm;
-    ImageView rArm;
+    ImageView head, arm_l, arm_r, hand_l, hand_r, leg_l, leg_r,
+              foot_l, foot_r;
+
 
     Boolean boolLeft = false;
 
@@ -99,9 +99,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         //Images
-        lArm = findViewById(R.id.arm_l);
-        rArm = findViewById(R.id.arm_r);
+        arm_l = findViewById(R.id.arm_l);
+        arm_r = findViewById(R.id.arm_r);
         head = findViewById(R.id.head);
+        hand_l = findViewById(R.id.hand_l);
+        hand_r = findViewById(R.id.hand_r);
+        leg_l = findViewById(R.id.leg_l);
+        leg_r = findViewById(R.id.leg_r);
+        foot_l = findViewById(R.id.foot_l);
+        foot_r = findViewById(R.id.foot_r);
 
 
 
@@ -118,13 +124,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if (id == R.id.btnCol1_R2){
             if (boolLeft){
-                showImage(lArm);
+                showImage(arm_l);
             } else {
-                showImage(rArm);
+                showImage(arm_r);
             }
             mediaPlayer = MediaPlayer.create(this, R.raw.arm);
         }
         else if (id == R.id.btnCol1_R3){
+            if (boolLeft){
+                showImage(leg_l);
+            } else {
+                showImage(leg_r);
+            }
             mediaPlayer = MediaPlayer.create(this, R.raw.leg);
         }
         else if (id == R.id.btnCol1_R4){
@@ -135,9 +146,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mediaPlayer = MediaPlayer.create(this, R.raw.head);
         }
         else if (id == R.id.btnCol2_R2){
+            if (boolLeft){
+                showImage(hand_l);
+            } else {
+                showImage(hand_r);
+            }
             mediaPlayer = MediaPlayer.create(this, R.raw.hand);
         }
         else if (id == R.id.btnCol2_R3){
+            if (boolLeft){
+                showImage(foot_l);
+            } else {
+                showImage(foot_r);
+            }
             mediaPlayer = MediaPlayer.create(this, R.raw.foot);
         }
         else if (id == R.id.btnCol2_R4){

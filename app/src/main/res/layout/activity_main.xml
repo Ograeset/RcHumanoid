@@ -40,8 +40,6 @@
     android:id="@+id/hand_l"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginStart="101dp"
-    android:layout_marginEnd="102dp"
     android:contentDescription="@string/app_name"
     android:visibility="invisible"
     app:layout_constraintBottom_toBottomOf="parent"
@@ -178,10 +176,8 @@
     android:visibility="invisible"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.39"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.0"
     app:srcCompat="@drawable/foot_r" />
 
 
