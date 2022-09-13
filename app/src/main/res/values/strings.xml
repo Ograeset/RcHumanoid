@@ -3,18 +3,18 @@
     <!-- col1 -->
     <string name="textCol1_R1">SHOULDER</string>
     <string name="textCol1_R2">HAND</string>
-    <string name="textCol1_R3"></string>
-    <string name="textCol1_R4">LEG</string>
+    <string name="textCol1_R3">HIP</string>
+    <string name="textCol1_R4"></string>
     <!-- col2 -->
     <string name="textCol2_R1">ARM</string>
     <string name="textCol2_R2">FINGERS</string>
-    <string name="textCol2_R3">TORSO</string>
-    <string name="textCol2_R4">KNEE</string>
+    <string name="textCol2_R3">LEG</string>
+    <string name="textCol2_R4"></string>
     <!-- col3 -->
-    <string name="textCol3_R1">FOREARM</string>
+    <string name="textCol3_R1">TORSO</string>
     <string name="textCol3_R2">THUMB</string>
-    <string name="textCol3_R3">HIP</string>
-    <string name="textCol3_R4">FOOT</string>
+    <string name="textCol3_R3">FOOT</string>
+    <string name="textCol3_R4"></string>
     <!-- col4 -->
     <string name="textCol4_R1">BEND</string>
     <string name="textCol4_R2">FORWARD</string>
