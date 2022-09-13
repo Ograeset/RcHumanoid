@@ -36,7 +36,147 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         // Buttons
+        buttons();
+        //Images
+        images();
 
+
+
+    }
+
+
+    @Override
+    public void onClick(View view) {
+
+        int id = view.getId(); // saves button id from onclick
+
+        if (id == R.id.btnCol1_R1){
+
+        }
+        else if (id == R.id.btnCol1_R2){
+            if (boolLeft){
+                showImage(hand_l);
+            } else {
+                showImage(hand_r);
+            }
+            mediaPlayer = MediaPlayer.create(this, R.raw.hand);
+        }
+        else if (id == R.id.btnCol1_R3){
+
+        }
+        else if (id == R.id.btnCol1_R4){
+            if (boolLeft){
+                showImage(leg_l);
+            } else {
+                showImage(leg_r);
+            }
+            mediaPlayer = MediaPlayer.create(this, R.raw.leg);
+
+
+        }
+        else if(id == R.id.btnCol2_R1){
+            if (boolLeft){
+                showImage(arm_l);
+            } else {
+                showImage(arm_r);
+            }
+            mediaPlayer = MediaPlayer.create(this, R.raw.arm);
+        }
+        else if (id == R.id.btnCol2_R2){
+
+        }
+        else if (id == R.id.btnCol2_R3){
+
+        }
+        else if (id == R.id.btnCol2_R4){
+            if (boolLeft){
+                showImage(knee_l);
+            } else {
+                showImage(knee_r);
+            }
+            mediaPlayer = MediaPlayer.create(this, R.raw.knee);
+        }
+        else if (id == R.id.btnCol3_R1){
+
+        }
+        else if (id == R.id.btnCol3_R2){
+
+        }
+        else if (id == R.id.btnCol3_R3){
+
+        }
+        else if (id == R.id.btnCol3_R4){
+            if (boolLeft){
+                showImage(foot_l);
+            } else {
+                showImage(foot_r);
+            }
+            mediaPlayer = MediaPlayer.create(this, R.raw.foot);
+        }
+        else if (id == R.id.btnCol4_R1){
+            mediaPlayer = MediaPlayer.create(this, R.raw.bend);
+
+        }
+        else if (id == R.id.btnCol4_R2){
+
+        }
+        else if (id == R.id.btnCol4_R3){
+            mediaPlayer = MediaPlayer.create(this, R.raw.left);
+            boolLeft = true;
+        }
+        else if (id == R.id.btnCol4_R4){
+
+        }
+        else if (id == R.id.btnCol5_R1){
+        }
+        else if (id == R.id.btnCol5_R2){
+            mediaPlayer = MediaPlayer.create(this, R.raw.up);
+
+        }
+        else if (id == R.id.btnCol5_R3){
+            mediaPlayer = MediaPlayer.create(this, R.raw.down);
+
+        }
+        else if (id == R.id.btnCol5_R4){
+
+        }
+        else if(id == R.id.btnCol6_R1){
+
+        }
+        else if(id == R.id.btnCol6_R2){
+
+        }
+        else if(id == R.id.btnCol6_R3){
+            mediaPlayer = MediaPlayer.create(this, R.raw.right);
+            boolLeft = false;
+        }
+        else if(id == R.id.btnCol6_R4){
+            mediaPlayer = MediaPlayer.create(this, R.raw.stop);
+        }
+
+
+        mediaPlayer.start();
+
+    }
+
+
+    public void showImage(ImageView image) {
+        Animation animFadeIn = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+        Animation animFadeOut = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_out);
+        Handler handler = new Handler(); // handler for time delay
+
+        image.startAnimation(animFadeIn);
+        image.setVisibility(ImageView.VISIBLE);
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                image.startAnimation(animFadeOut);
+                image.setVisibility(ImageView.INVISIBLE);
+            }
+        }, 5000);
+    }
+
+
+    public void buttons(){
         btnCol1_R1 = findViewById(R.id.btnCol1_R1);
         btnCol1_R2 = findViewById(R.id.btnCol1_R2);
         btnCol1_R3 = findViewById(R.id.btnCol1_R3);
@@ -96,9 +236,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnCol6_R2.setOnClickListener(this);
         btnCol6_R3.setOnClickListener(this);
         btnCol6_R4.setOnClickListener(this);
+    }
 
-
-        //Images
+    public void images(){
         arm_l = findViewById(R.id.arm_l);
         arm_r = findViewById(R.id.arm_r);
         head = findViewById(R.id.head);
@@ -111,140 +251,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         knee_l = findViewById(R.id.knee_l);
         knee_r = findViewById(R.id.knee_r);
 
-
-
     }
-
-
-    @Override
-    public void onClick(View view) {
-
-        int id = view.getId(); // saves button id from onclick
-
-        if (id == R.id.btnCol1_R1){
-
-        }
-        else if (id == R.id.btnCol1_R2){
-            if (boolLeft){
-                showImage(arm_l);
-            } else {
-                showImage(arm_r);
-            }
-            mediaPlayer = MediaPlayer.create(this, R.raw.arm);
-        }
-        else if (id == R.id.btnCol1_R3){
-            if (boolLeft){
-                showImage(leg_l);
-            } else {
-                showImage(leg_r);
-            }
-            mediaPlayer = MediaPlayer.create(this, R.raw.leg);
-        }
-        else if (id == R.id.btnCol1_R4){
-            if (boolLeft){
-                showImage(knee_l);
-            } else {
-                showImage(knee_r);
-            }
-            mediaPlayer = MediaPlayer.create(this, R.raw.down);
-
-        }
-        else if(id == R.id.btnCol2_R1){ // head
-            showImage(head);
-            mediaPlayer = MediaPlayer.create(this, R.raw.head);
-        }
-        else if (id == R.id.btnCol2_R2){
-            if (boolLeft){
-                showImage(hand_l);
-            } else {
-                showImage(hand_r);
-            }
-            mediaPlayer = MediaPlayer.create(this, R.raw.hand);
-        }
-        else if (id == R.id.btnCol2_R3){
-            if (boolLeft){
-                showImage(foot_l);
-            } else {
-                showImage(foot_r);
-            }
-            mediaPlayer = MediaPlayer.create(this, R.raw.foot);
-        }
-        else if (id == R.id.btnCol2_R4){
-
-        }
-        else if (id == R.id.btnCol3_R1){
-
-        }
-        else if (id == R.id.btnCol3_R2){
-
-        }
-        else if (id == R.id.btnCol3_R3){
-
-        }
-        else if (id == R.id.btnCol3_R4){
-
-        }
-        else if (id == R.id.btnCol4_R1){
-
-        }
-        else if (id == R.id.btnCol4_R2){
-            mediaPlayer = MediaPlayer.create(this, R.raw.left);
-            boolLeft = true;
-        }
-        else if (id == R.id.btnCol4_R3){
-            mediaPlayer = MediaPlayer.create(this, R.raw.bend);
-        }
-        else if (id == R.id.btnCol4_R4){
-
-        }
-        else if (id == R.id.btnCol5_R1){
-            mediaPlayer = MediaPlayer.create(this, R.raw.up);
-        }
-        else if (id == R.id.btnCol5_R2){
-            mediaPlayer = MediaPlayer.create(this, R.raw.down);
-        }
-        else if (id == R.id.btnCol5_R3){
-
-        }
-        else if (id == R.id.btnCol5_R4){
-
-        }
-        else if(id == R.id.btnCol6_R1){
-
-        }
-        else if(id == R.id.btnCol6_R2){
-            mediaPlayer = MediaPlayer.create(this, R.raw.right);
-            boolLeft = false;
-        }
-        else if(id == R.id.btnCol6_R3){
-            mediaPlayer = MediaPlayer.create(this, R.raw.walk);
-        }
-        else if(id == R.id.btnCol6_R4){
-            mediaPlayer = MediaPlayer.create(this, R.raw.stop);
-        }
-
-
-
-
-        mediaPlayer.start();
-
-    }
-
-
-    public void showImage(ImageView image) {
-        Animation animFadeIn = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
-        Animation animFadeOut = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_out);
-        Handler handler = new Handler(); // handler for time delay
-
-        image.startAnimation(animFadeIn);
-        image.setVisibility(ImageView.VISIBLE);
-        handler.postDelayed(new Runnable() {
-            public void run() {
-                image.startAnimation(animFadeOut);
-                image.setVisibility(ImageView.INVISIBLE);
-            }
-        }, 5000);
-    }
-
-
 }

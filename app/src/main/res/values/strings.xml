@@ -2,33 +2,33 @@
     <string name="app_name">RcHumanoid</string>
     <!-- col1 -->
     <string name="textCol1_R1">SHOULDER</string>
-    <string name="textCol1_R2">ARM</string>
-    <string name="textCol1_R3">LEG</string>
-    <string name="textCol1_R4">KNEE</string>
+    <string name="textCol1_R2">HAND</string>
+    <string name="textCol1_R3"></string>
+    <string name="textCol1_R4">LEG</string>
     <!-- col2 -->
-    <string name="textCol2_R1">HEAD</string>
-    <string name="textCol2_R2">HAND</string>
-    <string name="textCol2_R3">FOOT</string>
-    <string name="textCol2_R4">TEXT</string>
+    <string name="textCol2_R1">ARM</string>
+    <string name="textCol2_R2">FINGERS</string>
+    <string name="textCol2_R3">TORSO</string>
+    <string name="textCol2_R4">KNEE</string>
     <!-- col3 -->
-    <string name="textCol3_R1">TORSO</string>
-    <string name="textCol3_R2">FINGERS</string>
+    <string name="textCol3_R1">FOREARM</string>
+    <string name="textCol3_R2">THUMB</string>
     <string name="textCol3_R3">HIP</string>
-    <string name="textCol3_R4">TEXT</string>
+    <string name="textCol3_R4">FOOT</string>
     <!-- col4 -->
-    <string name="textCol4_R1">FORWARD</string>
-    <string name="textCol4_R2">LEFT</string>
-    <string name="textCol4_R3">BEND</string>
+    <string name="textCol4_R1">BEND</string>
+    <string name="textCol4_R2">FORWARD</string>
+    <string name="textCol4_R3">LEFT</string>
     <string name="textCol4_R4">MOVE</string>
     <!-- col5 -->
-    <string name="textCol5_R1">UP</string>
-    <string name="textCol5_R2">DOWN</string>
-    <string name="textCol5_R3">STRETCH</string>
+    <string name="textCol5_R1">STRETCH</string>
+    <string name="textCol5_R2">UP</string>
+    <string name="textCol5_R3">DOWN</string>
     <string name="textCol5_R4">RESET</string>
     <!-- col6 -->
-    <string name="textCol6_R1">BACKWARD</string>
-    <string name="textCol6_R2">RIGHT</string>
-    <string name="textCol6_R3">ROTATE</string>
+    <string name="textCol6_R1">ROTATE</string>
+    <string name="textCol6_R2">BACKWARD</string>
+    <string name="textCol6_R3">RIGHT</string>
     <string name="textCol6_R4">STOP</string>
 
 </resources>

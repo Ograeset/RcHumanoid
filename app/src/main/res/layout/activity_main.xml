@@ -681,7 +681,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/guidelineCol4_1"
         app:layout_constraintTop_toBottomOf="@+id/btnCol4_R2"
-        app:strokeColor="#FFF"
+        app:strokeColor="@color/purple_200"
         app:strokeWidth="3dp" />
 
     <Button
@@ -774,7 +774,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/guidelineCol5_1"
         app:layout_constraintTop_toBottomOf="@+id/btnCol5_R1"
-        app:strokeColor="#FFF"
+        app:strokeColor="@color/purple_200"
         app:strokeWidth="3dp" />
 
     <Button
@@ -791,7 +791,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/guidelineCol5_1"
         app:layout_constraintTop_toBottomOf="@+id/btnCol5_R2"
-        app:strokeColor="#FFF"
+        app:strokeColor="@color/purple_200"
         app:strokeWidth="3dp" />
 
     <Button
@@ -900,7 +900,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/guidelineCol6_1"
         app:layout_constraintTop_toBottomOf="@+id/btnCol6_R2"
-        app:strokeColor="#FFF"
+        app:strokeColor="@color/purple_200"
         app:strokeWidth="3dp" />
 
     <Button
